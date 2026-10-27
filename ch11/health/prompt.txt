@@ -1,0 +1,5 @@
+Add GET /health to ch05/notes_api.py. It must open a database
+connection, run SELECT 1 and return {"status": "ok"}. First add
+test_health_reports_ok to ch05/tests/test_notes_api.py and run it
+to see it fail. Then make the smallest change that passes. Don't
+change any other route.

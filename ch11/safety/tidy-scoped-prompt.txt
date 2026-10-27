@@ -1,0 +1,4 @@
+Tidy up this folder.
+Scope: you may rename files and create folders. Don't delete,
+move or open any file whose name starts with a dot. If a file
+looks like it holds credentials, list it and ask me.

@@ -1,0 +1,4 @@
+rows = conn.execute(
+    f"SELECT * FROM notes WHERE title LIKE '%{q}%' "
+    f"OR body LIKE '%{q}%' ORDER BY id"
+).fetchall()

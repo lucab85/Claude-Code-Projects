@@ -1,0 +1,15 @@
++TITLE_MAX = 200
++BODY_MAX = 10_000
++
++
+ class NoteIn(BaseModel):
+-    title: str
+-    body: str = ""
++    title: str = Field(max_length=TITLE_MAX)
++    body: str = Field(default="", max_length=BODY_MAX)
+ ...
+ class NoteUpdate(BaseModel):
+-    title: Optional[str] = None
+-    body: Optional[str] = None
++    title: Optional[str] = Field(default=None, max_length=TITLE_MAX)
++    body: Optional[str] = Field(default=None, max_length=BODY_MAX)

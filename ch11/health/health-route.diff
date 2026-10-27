@@ -1,0 +1,6 @@
++@app.get("/health")
++def health():
++    """Report that the API is up and can reach its database."""
++    with get_db() as conn:
++        conn.execute("SELECT 1")
++    return {"status": "ok"}
