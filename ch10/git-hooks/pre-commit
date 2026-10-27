@@ -1,0 +1,9 @@
+#!/bin/sh
+# Git hook: block commits that change the Notes API while it fails.
+if git diff --cached --name-only | grep -qx "ch05/notes_api.py"; then
+  if ! python3 .claude/skills/notes-api-smoke/smoke.py \
+       ch05/notes_api.py 8199; then
+    echo "Commit blocked: fix the smoke test failures first." >&2
+    exit 1
+  fi
+fi

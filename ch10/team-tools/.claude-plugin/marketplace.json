@@ -1,0 +1,12 @@
+{
+  "name": "team-tools",
+  "description": "Claude Code tools for our workspace.",
+  "owner": { "name": "Your Name" },
+  "plugins": [
+    {
+      "name": "notes-guardrails",
+      "source": "./notes-guardrails",
+      "description": "Smoke-test skill and commit guard for a Notes API."
+    }
+  ]
+}

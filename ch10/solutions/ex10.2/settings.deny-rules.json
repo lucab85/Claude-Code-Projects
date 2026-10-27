@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": ["Bash(python3 -m pytest *)"],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Edit(./ch08/golden.json)",
+      "Edit(./ch08/test_pricing.py)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [{
+      "matcher": "Bash",
+      "hooks": [{
+        "type": "command",
+        "if": "Bash(git commit *)",
+        "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard.py\""
+      }]
+    }]
+  }
+}
