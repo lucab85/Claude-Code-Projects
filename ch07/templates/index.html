@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Dashboard</h1>
+    <button class="primary">+ New Note</button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <ul>
+        <li class="active">Overview</li>
+        <li>Notes</li>
+        <li>Tasks</li>
+        <li>Reports</li>
+        <li>Settings</li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section class="kpis">
+        {% for k in kpis %}
+        <article class="kpi">
+          <p class="kpi-label">{{ k.label }}</p>
+          <p class="kpi-value">{{ k.value }}</p>
+        </article>
+        {% endfor %}
+      </section>
+      <section class="table-card">
+        <h2>Recent items</h2>
+        <table>
+          <thead>
+            <tr><th>#</th><th>Title</th><th>Owner</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            {% for r in rows %}
+            <tr>
+              <td>{{ r.id }}</td>
+              <td>{{ r.title }}</td>
+              <td>{{ r.owner }}</td>
+              <td><span class="badge {{ r.status }}">{{ r.status }}</span></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">v{{ version }}</footer>
+</body>
+</html>

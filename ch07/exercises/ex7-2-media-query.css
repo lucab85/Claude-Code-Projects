@@ -1,0 +1,12 @@
+/* Phones: stack the sidebar above the content. */
+@media (max-width: 640px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 8px 0;
+  }
+  .sidebar ul { display: flex; overflow-x: auto; }
+  .sidebar li { white-space: nowrap; }
+  .kpis { grid-template-columns: 1fr; }
+}

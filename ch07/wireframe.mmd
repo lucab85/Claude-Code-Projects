@@ -1,0 +1,40 @@
+flowchart TB
+  subgraph header[" "]
+    direction LR
+    H1[Dashboard] -->|spacer| H2[Primary Action]
+  end
+
+  subgraph body[" "]
+    direction LR
+    subgraph nav["Sidebar"]
+      direction TB
+      N1[Overview]
+      N2[Notes]
+      N3[Tasks]
+      N4[Reports]
+      N5[Settings]
+    end
+
+    subgraph main["Main"]
+      direction TB
+      subgraph kpis[" "]
+        direction LR
+        K1[KPI 1]
+        K2[KPI 2]
+        K3[KPI 3]
+      end
+      subgraph table[Table]
+        direction TB
+        R1[Row 1]
+        R2[Row 2]
+        R3[Row 3]
+        R4[Row 4]
+        R5[Row 5]
+      end
+    end
+  end
+
+  F1[Footer · v1.0.0]
+
+  header --> body
+  body --> F1
