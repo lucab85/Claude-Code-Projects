@@ -1,4 +1,4 @@
-"""Order pricing — deliberately messy. Refactor in Module 8.
+"""Order pricing — deliberately messy. Refactor in Chapter 8.
 
 Computes the final price of an order with discounts, taxes, and shipping.
 """
