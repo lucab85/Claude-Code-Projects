@@ -22,7 +22,8 @@ and the files for the safety experiment and the six exercises.
 | `safety/tidy-scoped-prompt.txt` | The tidy-up prompt with the scope spelled out | Testing the tidy-up trap yourself |
 | `safety/settings.json` | The cautious permissions profile for `.claude/settings.json` | A cautious permissions profile |
 | `exercises/README.md` | How to use the exercise files | Practice exercises |
-| `exercises/11.1-audit/audit.md` | Reference audit of the workshop's 12-item report | Exercise 11.1 |
+| `exercises/11.1-audit/readiness-report.md` | The 12-item readiness report to audit | Exercise 11.1 |
+| `exercises/11.1-audit/audit.md` | Reference audit of that report | Exercise 11.1 |
 | `exercises/11.2-sql-injection/planted-query.txt` | The f-string query to plant in `list_notes()` | Exercise 11.2 |
 | `exercises/11.2-sql-injection/probe_injection.py` | Shows whether `zzz' OR 1=1 --` returns every note | Exercise 11.2 |
 | `exercises/11.3-input-limits/input-limits.diff` | The input-limits change, as in the chapter | Exercise 11.3 |

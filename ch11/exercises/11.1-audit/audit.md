@@ -1,6 +1,6 @@
-# Audit of the workshop's 12-item readiness report
+# Audit of the 12-item readiness report
 
-Source: `exercises/part-10/solution/README.md` in the workshop repository.
+Source: `ch11/exercises/11.1-audit/readiness-report.md`.
 Checked against the Notes API in ch05, as it stands at the end of
 Chapter 10 (before any Chapter 11 changes). Run the commands from the
 workspace root.
@@ -13,7 +13,7 @@ workspace root.
 | 4 | Error budgets ✗: no SLO for `/tasks` | FALSE | No SLO exists, but for `/notes`; there is no `/tasks` route. |
 | 5 | Idempotency △: `POST /tasks` not idempotent | FALSE | Wrong route again. The substance holds for `POST /notes`: posting the same body twice creates two notes. |
 | 6 | Observability ✗: no structured logs, no traces | VERIFIED | `grep -n "logging" ch05/notes_api.py` has no matches |
-| 7 | Performance ✓: "p95 < 50ms on 1k tasks (smoke)" | UNCHECKABLE | No measurement exists in the workspace or the workshop materials; the smoke test checks status codes, not latency. A ✓ needs a command that proves it. |
+| 7 | Performance ✓: "p95 < 50ms on 1k tasks (smoke)" | UNCHECKABLE | No measurement exists anywhere in the workspace or the code repository; the smoke test checks status codes, not latency. A ✓ needs a command that proves it. |
 | 8 | Backwards compatibility n/a: first release | VERIFIED | `git tag` is empty: nothing has been released |
 | 9 | Disaster recovery △: SQLite file, no backup | VERIFIED | `ls ch05` shows `notes.db` and no backup or backup script |
 | 10 | Rollback ✓: "Container image tagged per commit" | FALSE | `ls ch05` shows no Dockerfile or container config, and `git tag` is empty |

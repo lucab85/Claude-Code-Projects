@@ -11,7 +11,7 @@ are what Claude produced from prompts that never mentioned the conventions.
 | File | What it is | Section |
 |------|------------|---------|
 | `CLAUDE.md` | The reviewed project brain file, including the exit-code rule added at the end of the chapter (33 lines). Copy it to the root of your workspace, not into `ch03/`. | Reviewing and trimming to 80 lines; Turning a mistake into a rule |
-| `greet.py` | Greeting CLI with a `hello <name>` subcommand and an `--upper` flag, produced in the workshop with a similar CLAUDE.md in place | The fresh-session test |
+| `greet.py` | Greeting CLI with a `hello <name>` subcommand and an `--upper` flag, produced in an earlier session with a similar CLAUDE.md in place | The fresh-session test |
 | `trim-notes.md` | Example notes for the trim test, with one line you could delete and why | The trim test |
 | `count.py` | Word-count CLI with a `words <file>` subcommand; every usage error exits with 1 | Turning a mistake into a rule |
 

@@ -5,7 +5,7 @@ Project 8 refactors a deliberately messy pricing module under written constraint
 | Folder | What it holds | Section |
 | --- | --- | --- |
 | `start/` | The legacy `pricing.py` and its 8 passing tests. The mess is intentional | Setting up and reading the legacy code |
-| `workshop-refactor/` | A refactor from the workshop, with its `HANDOFF.md` and `ARCHITECTURE.md`. It passes all 8 tests but changes behavior, and its documents don't match its code | Testing the safety net on a real refactor; Exercise 8.2 |
+| `workshop-refactor/` | An earlier refactor, with its `HANDOFF.md` and `ARCHITECTURE.md`. It passes all 8 tests but changes behavior, and its documents don't match its code | Testing the safety net on a real refactor; Exercise 8.2 |
 | `solution/` | The finished project: refactored `pricing.py`, `golden.py`, `golden.json` recorded from the legacy code, `constraints.md`, `HANDOFF.md` and `ARCHITECTURE.md` | Project 8 |
 
 Check the reference solution from its folder:

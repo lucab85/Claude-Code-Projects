@@ -7,9 +7,11 @@ only says how each file fits in.
 
 ## 11.1 Audit a readiness report
 
-`11.1-audit/audit.md` is a reference answer: each of the workshop's 12
-claims marked VERIFIED, FALSE or UNCHECKABLE, with the command or file
-that decides it. Write your own ch11/audit.md first.
+`11.1-audit/readiness-report.md` is the report to audit: 12 items
+produced with the release-readiness skill for the Chapter 4 Notes API.
+Don't fix it; its mistakes are the point. `11.1-audit/audit.md` is a
+reference answer: each of the report's 12 claims marked VERIFIED, FALSE
+or UNCHECKABLE, with the command or file that decides it. Write your own ch11/audit.md first.
 
 ## 11.2 Catch an injection with /security-review
 
